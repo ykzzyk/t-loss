@@ -52,9 +52,9 @@ def get_config():
     data.dataset = "ISIC"
     data.image_size = 128
     data.num_channels = 3
-    data.root_dir = "/data/ISIC_noise"
-    data.training = "/data/ISIC_noise/split/train.csv"
-    data.validation = "/data/ISIC_noise/split/validation.csv"
+    data.root_dir = "data/ISIC_noise"
+    data.training = "data/ISIC_noise/split/train.csv"
+    data.validation = "data/ISIC_noise/split/validation.csv"
     data.noise_alpha = 0.7
     data.noise_beta = 0.7
     data.aug_rot90 = True

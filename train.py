@@ -307,6 +307,7 @@ def training_loop(
                     NoiseType.ERODE.value: [],
                 }
 
+                print(f"{torch.mean(criterion.nu).item()}\n")
                 nu_values.append(torch.mean(criterion.nu).item())
 
                 if check_nu_plateau(
